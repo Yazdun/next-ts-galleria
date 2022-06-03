@@ -8,7 +8,9 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "framer-motion": "^6.3.10",
     "next": "latest",
+    "next-seo": "^5.4.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
