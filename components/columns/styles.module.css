@@ -4,3 +4,9 @@
   margin: auto;
   padding: var(--p-1);
 }
+
+@media only screen and (min-width: 768px) {
+  .columns {
+    padding: var(--p-2);
+  }
+}

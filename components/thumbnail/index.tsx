@@ -13,7 +13,8 @@ export const Thumbnail: React.FC<IProps> = ({ art }) => {
         src={art.images.thumbnail}
         alt="hello"
         placeholder="blur"
-        loading="lazy"
+        layout="responsive"
+        objectFit="contain"
       />
     </div>
   )
