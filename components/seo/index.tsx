@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC SEO
+|
+|  Purpose:  REUSABLE SEO COMPONENT FOR USING IN PROJECT'S PAGES
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import { NextSeo } from 'next-seo'
 import { DEFAULT_DESC_META_TAG, RENDER_TITLE_META_TAG } from '@/constants/index'

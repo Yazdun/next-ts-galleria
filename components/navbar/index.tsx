@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Navbar
+|
+|  Purpose:  PROJECT'S NAVIGATION BAR
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import { project_logo } from '@/assets/shared'
 import Image from 'next/image'
 import React from 'react'
@@ -7,6 +15,7 @@ import {
   PROJECT_LOGO_DESKTOP_SIZES,
 } from '@/constants/index'
 import css from './styles.module.css'
+import Link from 'next/link'
 
 export const Navbar: React.FC = () => {
   const { isTouch } = useWindowSize()
@@ -30,7 +39,11 @@ export const Navbar: React.FC = () => {
             }
           />
         </li>
-        <li>start slideshow</li>
+        <li>
+          <Link href="/slideshow">
+            <a>start slideshow</a>
+          </Link>
+        </li>
       </ul>
     </nav>
   )

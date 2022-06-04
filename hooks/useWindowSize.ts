@@ -3,8 +3,7 @@
 |
 |  Purpose:  FINDS OUT THE WIDTH AND HEIGHT OF THE DOCUMENT
 |
-|
-|  Returns:  WIDTH, HEIGHT OF THE DOCUMENT, AND ALSO A BOOLEAN WHICH 
+|  Returns:  WIDTH, HEIGHT OF THE DOCUMENT, AND A BOOLEAN WHICH TELLS 
 |            IF THE DOCUMENT IS BEING VIEWED IN TOUCH DEVICES OR NOT
 *-------------------------------------------------------------------*/
 
