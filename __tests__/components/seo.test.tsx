@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import { SEO } from '@/components/index'
 import { RENDER_TITLE_META_TAG, DEFAULT_DESC_META_TAG } from '@/constants/index'
 

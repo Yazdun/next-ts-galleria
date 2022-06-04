@@ -1,4 +1,15 @@
+/*-------------------------------------------------------------------
+|  Hook useWindowSize
+|
+|  Purpose:  FINDS OUT THE WIDTH AND HEIGHT OF THE DOCUMENT
+|
+|
+|  Returns:  WIDTH, HEIGHT OF THE DOCUMENT, AND ALSO A BOOLEAN WHICH 
+|            IF THE DOCUMENT IS BEING VIEWED IN TOUCH DEVICES OR NOT
+*-------------------------------------------------------------------*/
+
 import { useState, useEffect } from 'react'
+
 // Define general type for useWindowSize hook, which includes width and height
 interface Size {
   width: number | undefined
