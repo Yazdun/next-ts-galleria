@@ -14,7 +14,7 @@ import {
   the_sleeping_gypsy,
   the_night_cafe,
   the_swing,
-} from 'assets'
+} from '@/assets/index'
 
 export const data = [
   {
