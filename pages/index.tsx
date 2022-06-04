@@ -5,7 +5,9 @@ const Home: NextPage = () => {
   return (
     <>
       <SEO />
-      <Layout>{/* <h1>Art Galleria</h1> */}</Layout>
+      <Layout>
+        <h1 style={{ opacity: 0 }}>hello</h1>
+      </Layout>
     </>
   )
 }

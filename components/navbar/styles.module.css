@@ -1,0 +1,26 @@
+.nav {
+  width: 100%;
+  max-width: var(--maxwidth-1);
+  margin: auto;
+  padding: var(--p-1);
+  border-bottom: 1px solid var(--clr-light-shade-3);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    padding-inline: var(--p-2);
+    padding-block: 0;
+    border: none;
+  }
+
+  .list {
+    padding-block: var(--p-2);
+    border-bottom: 1px solid var(--clr-light-shade-3);
+  }
+}

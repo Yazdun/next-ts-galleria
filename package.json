@@ -8,6 +8,7 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "@testing-library/react-hooks": "^8.0.0",
     "framer-motion": "^6.3.10",
     "next": "latest",
     "next-seo": "^5.4.0",

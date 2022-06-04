@@ -7,6 +7,11 @@
   --clr-light-shade-2: #f3f3f3;
   --clr-light-shade-3: #e5e5e5;
 
+  --maxwidth-1: 85rem;
+
+  --p-1: 1.5rem;
+  --p-2: 2.5rem;
+
   --ff-serif: 'Libre Baskerville', serif;
 }
 
@@ -22,4 +27,8 @@ body {
   background-color: var(--clr-light-shade-1);
   color: var(--clr-dark-shade-1);
   font-family: var(--ff-serif);
+}
+
+ul {
+  list-style-type: none;
 }
