@@ -257,7 +257,7 @@ export const data = [
       name: 'Jan van Eyck',
     },
     images: {
-      thumbnail: arnolfini_portrait.artist,
+      thumbnail: arnolfini_portrait.thumbnail,
       hero: {
         small: arnolfini_portrait.hero_small,
         large: arnolfini_portrait.hero_large,

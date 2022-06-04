@@ -1,17 +1,17 @@
 export interface IArtist {
-  image: object
+  image: string
   name: string
 }
 
 export interface IPictures {
-  thumbnail: object
+  thumbnail: string
   hero: IHeroes
-  gallery: object
+  gallery: string
 }
 
 export interface IHeroes {
-  small: object
-  large: object
+  small: string
+  large: string
 }
 
 export interface IArt {

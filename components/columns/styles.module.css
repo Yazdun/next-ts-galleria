@@ -1,0 +1,6 @@
+.columns {
+  width: 100%;
+  max-width: var(--max-width-1);
+  margin: auto;
+  padding: var(--p-1);
+}
