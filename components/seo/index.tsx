@@ -1,19 +1,17 @@
 import React from 'react'
 import { NextSeo } from 'next-seo'
+import { DEFAULT_DESC_META_TAG, RENDER_TITLE_META_TAG } from '@/constants/index'
 
 interface IProps {
   title?: string
   desc?: string
 }
 
-export const SEO: React.FC<IProps> = ({
-  title = 'Homepage',
-  desc = 'Galleria slideshow site',
-}) => {
+export const SEO: React.FC<IProps> = ({ title = '', desc = '' }) => {
   return (
     <NextSeo
-      title={`Galleria | ${title}`}
-      description={desc}
+      title={RENDER_TITLE_META_TAG(title)}
+      description={desc ? desc : DEFAULT_DESC_META_TAG}
       additionalLinkTags={[{ rel: 'icon', href: '/favicon.png' }]}
       twitter={{
         handle: '@Yazdun',
