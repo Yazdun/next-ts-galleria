@@ -1,0 +1,23 @@
+.artist {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  gap: 0.938rem;
+  font-size: 0.975rem;
+}
+
+.artist span {
+  font-size: 0.725rem;
+  color: #3f3f3f;
+  font-weight: normal;
+}
+
+@media only screen and (min-width: 768px) {
+  .artist {
+    font-size: 1.125rem;
+  }
+
+  .artist span {
+    font-size: 0.813rem;
+  }
+}

@@ -2,15 +2,18 @@ import React from 'react'
 import css from './styles.module.css'
 import { TbPlayerSkipForward, TbPlayerSkipBack } from 'react-icons/tb'
 import Link from 'next/link'
+import { IArt } from '@/interfaces/index'
+import { Preview } from '@/components/index'
 
-export const Progression: React.FC = () => {
+interface IProps {
+  art: IArt
+}
+
+export const Progression: React.FC<IProps> = ({ art }) => {
   return (
     <div className={css.wrapper}>
       <div className={css.container}>
-        <p className={css.artist}>
-          Starry Night
-          <span>Vincent Van Gogh</span>
-        </p>
+        <Preview art={art} />
         <div className={css.actions}>
           <Link href="/">
             <a>

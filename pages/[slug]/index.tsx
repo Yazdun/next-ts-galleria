@@ -51,7 +51,7 @@ const Slug: NextPage<IProps> = props => {
   return (
     <>
       <SEO title="slug" />
-      <Layout slug>
+      <Layout art={art}>
         <div className={css.container}>
           <h1>{art.name}</h1>
         </div>
