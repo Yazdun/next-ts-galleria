@@ -18,7 +18,7 @@ import {
 
 export const data = [
   {
-    id: 1,
+    id: 0,
     name: 'Starry Night',
     slug: 'starry-night',
     year: 1889,
@@ -40,7 +40,7 @@ export const data = [
     },
   },
   {
-    id: 2,
+    id: 1,
     name: 'Girl with a Pearl Earring',
     slug: 'girl-with-a-pearl-earring',
     year: 1665,
@@ -62,7 +62,7 @@ export const data = [
     },
   },
   {
-    id: 3,
+    id: 2,
     name: 'Guernica',
     slug: 'guernica',
     year: 1937,
@@ -84,7 +84,7 @@ export const data = [
     },
   },
   {
-    id: 4,
+    id: 3,
     name: 'Penitent Magdalene',
     slug: 'penitent-magdalene',
     year: 1625,
@@ -107,7 +107,7 @@ export const data = [
     },
   },
   {
-    id: 5,
+    id: 4,
     name: 'The Storm on the Sea of Galilee',
     slug: 'the-storm-on-the-sea-of-galilee',
     year: 1633,
@@ -129,7 +129,7 @@ export const data = [
     },
   },
   {
-    id: 6,
+    id: 5,
     name: 'The Great Wave off Kanagawa',
     slug: 'the-great-wave-off-kanagawa',
     year: 1831,
@@ -151,7 +151,7 @@ export const data = [
     },
   },
   {
-    id: 7,
+    id: 6,
     name: 'Van Gogh Self-portrait',
     slug: 'van-gogh-self-portrait',
     year: 1889,
@@ -173,7 +173,7 @@ export const data = [
     },
   },
   {
-    id: 8,
+    id: 7,
     name: 'The Sleeping Gypsy',
     slug: 'the-sleeping-gypsy',
     year: 1897,
@@ -195,7 +195,7 @@ export const data = [
     },
   },
   {
-    id: 9,
+    id: 8,
     name: 'Lady with an-Ermine',
     slug: 'lady-with-an-ermine',
     year: 1489,
@@ -217,7 +217,7 @@ export const data = [
     },
   },
   {
-    id: 10,
+    id: 9,
     name: 'The Night Café',
     slug: 'the-night-cafe',
     year: 1888,
@@ -239,7 +239,7 @@ export const data = [
     },
   },
   {
-    id: 11,
+    id: 10,
     name: 'The Basket of Apples',
     slug: 'the-basket-of-apples',
     year: 1893,
@@ -261,7 +261,7 @@ export const data = [
     },
   },
   {
-    id: 12,
+    id: 11,
     name: 'The Boy in the Red Vest',
     slug: 'the-boy-in-the-red-vest',
     year: 1889,
@@ -283,7 +283,7 @@ export const data = [
     },
   },
   {
-    id: 13,
+    id: 12,
     name: 'Arnolfini Portrait',
     slug: 'arnolfini-portrait',
     year: 1434,
@@ -305,7 +305,7 @@ export const data = [
     },
   },
   {
-    id: 14,
+    id: 13,
     name: 'Mona Lisa',
     slug: 'mona-lisa',
     year: 1503,
@@ -327,7 +327,7 @@ export const data = [
     },
   },
   {
-    id: 15,
+    id: 14,
     name: 'The Swing',
     slug: 'the-swing',
     year: 1767,
