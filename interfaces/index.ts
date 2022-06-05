@@ -17,6 +17,7 @@ export interface IHeroes {
 }
 
 export interface IArt {
+  id: number
   name: string
   year: number
   artist: IArtist

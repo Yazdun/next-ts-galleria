@@ -16,9 +16,13 @@ import {
 } from '@/constants/index'
 import css from './styles.module.css'
 import Link from 'next/link'
+import { data } from '@/data/index'
+import { useRouter } from 'next/router'
 
 export const Navbar: React.FC = () => {
   const { isTouch } = useWindowSize()
+  const router = useRouter()
+  const isHome = router.pathname === '/'
 
   return (
     <nav className={css.nav}>
@@ -40,8 +44,14 @@ export const Navbar: React.FC = () => {
           />
         </li>
         <li>
-          <Link href="/slideshow">
-            <a className={css.link}>start slideshow</a>
+          <Link href={isHome ? data[0].slug : '/'}>
+            <a className={css.link}>
+              {isHome ? (
+                <span>start slideshow</span>
+              ) : (
+                <span>stop slideshow</span>
+              )}
+            </a>
           </Link>
         </li>
       </ul>
