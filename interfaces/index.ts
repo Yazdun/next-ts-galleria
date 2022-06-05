@@ -20,6 +20,7 @@ export interface IArt {
   name: string
   year: number
   artist: IArtist
+  slug: string
   grid_column: number
   description: string
   source: string

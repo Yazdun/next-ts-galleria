@@ -18,8 +18,8 @@ interface IProps {
 
 export const Thumbnail: React.FC<IProps> = ({ art }) => {
   return (
-    <Link href="/slideshow">
-      <a className={css.thumbnail}>
+    <Link href={art.slug}>
+      <a className={css.thumbnail} data-testid={art.name}>
         <Image
           src={art.images.thumbnail}
           alt="hello"
@@ -28,8 +28,10 @@ export const Thumbnail: React.FC<IProps> = ({ art }) => {
           objectFit="contain"
         />
         <p className={css.info}>
-          {art.name}
-          <span>{art.artist.name}</span>
+          <span data-testid="thumbnail_info">{art.name}</span>
+          <span data-testid="thumbnail_artist" className={css.artist}>
+            {art.artist.name}
+          </span>
         </p>
       </a>
     </Link>

@@ -14,11 +14,26 @@
   gap: var(--gap-1);
 }
 
+.link {
+  font-weight: bold;
+  line-height: 0.75rem;
+  font-size: 0.563rem;
+  letter-spacing: 0.156rem;
+  text-transform: uppercase;
+  color: var(--clr-dark-shade-2);
+  padding-bottom: 2rem;
+  padding-bottom: 50rem;
+}
+
 @media only screen and (min-width: 768px) {
   .nav {
     padding-inline: var(--p-2);
     padding-block: 0;
     border: none;
+  }
+
+  .link {
+    font-size: 0.75rem;
   }
 
   .list {

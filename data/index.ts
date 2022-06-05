@@ -19,6 +19,7 @@ import {
 export const data = [
   {
     name: 'Starry Night',
+    slug: 'starry-night',
     year: 1889,
     grid_column: 1,
     description:
@@ -39,6 +40,7 @@ export const data = [
   },
   {
     name: 'Girl with a Pearl Earring',
+    slug: 'girl-with-a-pearl-earring',
     year: 1665,
     grid_column: 2,
     description:
@@ -59,6 +61,7 @@ export const data = [
   },
   {
     name: 'Guernica',
+    slug: 'guernica',
     year: 1937,
     grid_column: 3,
     description:
@@ -79,6 +82,7 @@ export const data = [
   },
   {
     name: 'Penitent Magdalene',
+    slug: 'penitent-magdalene',
     year: 1625,
     grid_column: 4,
     description:
@@ -100,6 +104,7 @@ export const data = [
   },
   {
     name: 'The Storm on the Sea of Galilee',
+    slug: 'the-storm-on-the-sea-of-galilee',
     year: 1633,
     grid_column: 1,
     description:
@@ -120,6 +125,7 @@ export const data = [
   },
   {
     name: 'The Great Wave off Kanagawa',
+    slug: 'the-great-wave-off-kanagawa',
     year: 1831,
     grid_column: 2,
     description:
@@ -140,6 +146,7 @@ export const data = [
   },
   {
     name: 'Van Gogh Self-portrait',
+    slug: 'van-gogh-self-portrait',
     year: 1889,
     grid_column: 3,
     description:
@@ -160,6 +167,7 @@ export const data = [
   },
   {
     name: 'The Sleeping Gypsy',
+    slug: 'the-sleeping-gypsy',
     year: 1897,
     grid_column: 4,
     description:
@@ -179,7 +187,8 @@ export const data = [
     },
   },
   {
-    name: 'Lady with an Ermine',
+    name: 'Lady with an-Ermine',
+    slug: 'lady-with-an-ermine',
     year: 1489,
     grid_column: 1,
     description:
@@ -200,6 +209,7 @@ export const data = [
   },
   {
     name: 'The Night Café',
+    slug: 'the-night-cafe',
     year: 1888,
     grid_column: 2,
     description:
@@ -220,6 +230,7 @@ export const data = [
   },
   {
     name: 'The Basket of Apples',
+    slug: 'the-basket-of-apples',
     year: 1893,
     grid_column: 4,
     description:
@@ -240,6 +251,7 @@ export const data = [
   },
   {
     name: 'The Boy in the Red Vest',
+    slug: 'the-boy-in-the-red-vest',
     year: 1889,
     grid_column: 1,
     description:
@@ -260,6 +272,7 @@ export const data = [
   },
   {
     name: 'Arnolfini Portrait',
+    slug: 'arnolfini-portrait',
     year: 1434,
     grid_column: 2,
     description:
@@ -280,6 +293,7 @@ export const data = [
   },
   {
     name: 'Mona Lisa',
+    slug: 'mona-lisa',
     year: 1503,
     grid_column: 3,
     description:
@@ -300,6 +314,7 @@ export const data = [
   },
   {
     name: 'The Swing',
+    slug: 'the-swing',
     year: 1767,
     grid_column: 4,
     description:

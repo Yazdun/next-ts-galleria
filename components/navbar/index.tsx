@@ -41,7 +41,7 @@ export const Navbar: React.FC = () => {
         </li>
         <li>
           <Link href="/slideshow">
-            <a>start slideshow</a>
+            <a className={css.link}>start slideshow</a>
           </Link>
         </li>
       </ul>

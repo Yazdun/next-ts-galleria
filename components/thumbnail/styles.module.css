@@ -3,15 +3,25 @@
   display: block;
 }
 
+.thumbnail img {
+  transition: 0.3s;
+}
+
+.thumbnail:hover img {
+  opacity: 0.8;
+}
+
 .info {
   position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   bottom: 0;
   color: var(--clr-light-shade-1);
   padding: 2rem;
-  line-height: 28px;
   width: 100%;
+  font-weight: bold;
+  font-size: 24px;
   background: linear-gradient(
     0deg,
     rgba(2, 0, 36, 1) 0%,
@@ -19,7 +29,9 @@
   );
 }
 
-.info span {
+.artist {
   opacity: 0.7;
-  font-size: 0.9rem;
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 10px;
 }
