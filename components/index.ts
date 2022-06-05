@@ -1,5 +1,6 @@
 export { SEO } from '@/components/seo'
 export { Layout } from '@/components/layout'
 export { Navbar } from '@/components/navbar'
-export { Columns } from '@/components/columns'
+export { Showcase } from '@/components/showcase'
 export { Thumbnail } from '@/components/thumbnail'
+export { Column } from '@/components/column'

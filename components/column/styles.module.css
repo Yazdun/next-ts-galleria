@@ -1,0 +1,6 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--gap-1);
+}

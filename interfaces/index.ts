@@ -1,22 +1,25 @@
+import { StaticImageData } from 'next/image'
+
 export interface IArtist {
-  image: string
+  image: StaticImageData
   name: string
 }
 
 export interface IPictures {
-  thumbnail: string
+  thumbnail: StaticImageData
   hero: IHeroes
-  gallery: string
+  gallery: StaticImageData
 }
 
 export interface IHeroes {
-  small: string
-  large: string
+  small: StaticImageData
+  large: StaticImageData
 }
 
 export interface IArt {
   name: string
   year: number
+  grid_column: number
   description: string
   source: string
   artist: IArtist

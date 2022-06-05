@@ -1,12 +1,20 @@
-.columns {
+.grid {
   width: 100%;
   max-width: var(--max-width-1);
   margin: auto;
   padding: var(--p-1);
+  display: grid;
+  gap: var(--gap-1);
 }
 
 @media only screen and (min-width: 768px) {
-  .columns {
+  .grid {
     padding: var(--p-2);
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
