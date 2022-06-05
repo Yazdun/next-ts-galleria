@@ -7,14 +7,15 @@
   gap: var(--gap-1);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 500px) {
   .grid {
-    padding: var(--p-2);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 768px) {
   .grid {
+    padding: var(--p-2);
     grid-template-columns: repeat(4, 1fr);
   }
 }

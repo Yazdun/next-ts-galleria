@@ -1,3 +1,13 @@
+/*-------------------------------------------------------------------
+|  React FC Columns
+|
+|  Purpose:  THIS COMPONENT IS MEANT TO BE USED WITH `SHOWCASE` FC.
+|            `SHOWCASE` MUST RETURN 4 `COLUMNS` IN ORDER TO RENDER
+|            HOMEPAGE MASONARY GRID CORRECTLY.
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import { IArt } from '@/interfaces/index'
 import React from 'react'
 import { Thumbnail } from '../thumbnail'

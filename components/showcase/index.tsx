@@ -1,7 +1,9 @@
 /*-------------------------------------------------------------------
-|  React FC Columns
+|  React FC Showcase
 |
-|  Purpose:  GALLERY THUMBNAILS COLUMNS
+|  Purpose:  MASONRY GRID FOR ART'S SHOWCASE ON THE HOMEPAGE, THIS FC
+|            IS MEANT TO BE USED WITH `COLUMN` FC IN ORDER TO RENDER
+|            THE MASONARY GRID CORRECTLY. 
 |
 |  Returns:  TSX
 *-------------------------------------------------------------------*/
