@@ -1,6 +1,7 @@
 .thumbnail {
   position: relative;
   display: block;
+  overflow: hidden;
 }
 
 .thumbnail img {

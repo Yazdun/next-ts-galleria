@@ -1,4 +1,4 @@
-import { SEO, Layout } from '@/components/index'
+import { SEO, Layout, Art } from '@/components/index'
 import type { NextPage } from 'next'
 import { data } from '@/data/index'
 import { GetStaticProps, GetStaticPaths } from 'next'
@@ -12,7 +12,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
       params: { slug: art.slug || '' },
     }
   })
-
   return {
     paths,
     fallback: false,
@@ -26,16 +25,6 @@ interface IParams extends ParsedUrlQuery {
 export const getStaticProps: GetStaticProps = async context => {
   const { slug } = context.params as IParams
   const art = data.find(art => art.slug === slug)
-
-  if (!data) {
-    return {
-      redirect: {
-        destination: '/',
-        permanent: false,
-      },
-    }
-  }
-
   return {
     props: { art: art },
   }
@@ -53,7 +42,7 @@ const Slug: NextPage<IProps> = props => {
       <SEO title={art.name} desc={art.description} />
       <Layout art={art}>
         <div className={css.container}>
-          <h1>{art.name}</h1>
+          <Art art={art} />
         </div>
       </Layout>
     </>

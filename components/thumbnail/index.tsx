@@ -22,7 +22,7 @@ export const Thumbnail: React.FC<IProps> = ({ art }) => {
       <a className={css.thumbnail} data-testid={art.name}>
         <Image
           src={art.images.thumbnail}
-          alt="hello"
+          alt={art.name}
           layout="responsive"
           placeholder="blur"
           objectFit="contain"
