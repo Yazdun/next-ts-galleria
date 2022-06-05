@@ -37,7 +37,7 @@
   }
 
   .list {
-    padding-block: var(--p-2);
+    padding-block: var(--p-1);
     border-bottom: 1px solid var(--clr-light-shade-3);
   }
 }
