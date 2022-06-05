@@ -22,7 +22,7 @@ import { useRouter } from 'next/router'
 export const Navbar: React.FC = () => {
   const { isTouch } = useWindowSize()
   const router = useRouter()
-  const isHome = router.pathname === '/'
+  const isHome = router?.pathname === '/'
 
   return (
     <nav className={css.nav}>

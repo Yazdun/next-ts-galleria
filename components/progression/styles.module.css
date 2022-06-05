@@ -2,8 +2,6 @@
   padding-block: var(--p-1);
   padding-inline: var(--p-2);
   border-top: 2px solid var(--clr-light-shade-3);
-  position: sticky;
-  bottom: 0;
   background-color: var(--clr-light-shade-1);
   position: relative;
 }

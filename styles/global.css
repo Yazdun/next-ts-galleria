@@ -29,6 +29,7 @@ body {
   background-color: var(--clr-light-shade-1);
   color: var(--clr-dark-shade-1);
   font-family: var(--ff-serif);
+  overflow-x: hidden;
 }
 
 ul {

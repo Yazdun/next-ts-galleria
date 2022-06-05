@@ -2,10 +2,10 @@ import { render, screen } from '@testing-library/react'
 import { Navbar } from '@/components/index'
 
 describe('Navbar', () => {
-  it('should renders a link to slideshows', () => {
+  it('should renders a link related to slideshows', () => {
     render(<Navbar />)
     const link = screen.getByRole('link', {
-      name: /start slideshow/i,
+      name: /slideshow/i,
     })
     expect(link).toBeInTheDocument()
   })

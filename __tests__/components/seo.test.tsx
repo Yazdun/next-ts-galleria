@@ -29,7 +29,7 @@ const props = {
   desc: 'meta description',
 }
 
-describe('meta tags prop are provided', () => {
+describe('SEO : meta tags prop are provided', () => {
   it('should render the title meta tag', () => {
     render(<SEO {...props} />, { container: document.head })
     expect(document.title).toBe(RENDER_TITLE_META_TAG(props.title))
@@ -41,7 +41,7 @@ describe('meta tags prop are provided', () => {
   })
 })
 
-describe('meta tags prop are not provided', () => {
+describe('SEO : meta tags prop are not provided', () => {
   it('should render the default title meta tag', () => {
     render(<SEO />, { container: document.head })
     expect(document.title).toBe(RENDER_TITLE_META_TAG())

@@ -1,7 +1,7 @@
-import { act, renderHook } from '@testing-library/react-hooks'
+import { renderHook } from '@testing-library/react-hooks'
 import { useWindowSize } from '@/hooks/useWindowSize'
 
-describe('hook', () => {
+describe('useWindowSize', () => {
   it("should return document width's size correctly", () => {
     const { result } = renderHook(useWindowSize)
     expect(result.current.width).toBe(window.innerWidth)

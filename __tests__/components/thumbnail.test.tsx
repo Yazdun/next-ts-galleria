@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import { Thumbnail } from '@/components/index'
 import { data } from '@/data/index'
 
-describe("Thumbnail's info", () => {
+describe('Thumbnail', () => {
   // disables console warnings
   beforeEach(() => {
     jest.spyOn(console, 'warn').mockImplementation(() => {})

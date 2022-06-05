@@ -1,5 +1,12 @@
+/*-------------------------------------------------------------------
+|  React FC Skip
+|
+|  Purpose:  IT'S JUST A LINK BUTTON
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import { ReactNode } from 'react'
-import css from './styles.module.css'
 import Link from 'next/link'
 
 interface IProps {
@@ -11,7 +18,9 @@ interface IProps {
 export const Skip: React.FC<IProps> = ({ icon, aria_label, href }) => {
   return (
     <Link href={href}>
-      <a aria-label={aria_label}>{icon}</a>
+      <a data-testid="skip" aria-label={aria_label}>
+        {icon}
+      </a>
     </Link>
   )
 }
