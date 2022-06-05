@@ -2,7 +2,7 @@ import React from 'react'
 import css from './styles.module.css'
 import { TbPlayerSkipForward, TbPlayerSkipBack } from 'react-icons/tb'
 import { IArt } from '@/interfaces/index'
-import { Preview } from '@/components/index'
+import { PgBar, Preview } from '@/components/index'
 import { Skip } from '../skip'
 import { data } from '@/data/index'
 
@@ -17,6 +17,7 @@ export const Progression: React.FC<IProps> = ({ art }) => {
   return (
     <div className={css.wrapper}>
       <div className={css.container}>
+        <PgBar current_id={art.id} />
         <Preview art={art} />
         <div className={css.actions}>
           <Skip

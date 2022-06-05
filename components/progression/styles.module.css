@@ -5,6 +5,7 @@
   position: sticky;
   bottom: 0;
   background-color: var(--clr-light-shade-1);
+  position: relative;
 }
 
 .container {
@@ -16,20 +17,6 @@
   justify-content: space-between;
 }
 
-.artist {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-  gap: 0.938rem;
-  font-size: 0.975rem;
-}
-
-.artist span {
-  font-size: 0.725rem;
-  color: #3f3f3f;
-  font-weight: normal;
-}
-
 .actions {
   display: flex;
   gap: 1.313rem;
@@ -37,14 +24,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .artist {
-    font-size: 1.125rem;
-  }
-
-  .artist span {
-    font-size: 0.813rem;
-  }
-
   .actions {
     display: flex;
     gap: 2.313rem;
