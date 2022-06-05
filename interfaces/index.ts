@@ -19,9 +19,9 @@ export interface IHeroes {
 export interface IArt {
   name: string
   year: number
+  artist: IArtist
   grid_column: number
   description: string
   source: string
-  artist: IArtist
   images: IPictures
 }

@@ -10,7 +10,7 @@
 
 import { IArt } from '@/interfaces/index'
 import React from 'react'
-import { Thumbnail } from '../thumbnail'
+import { Thumbnail } from '@/components/index'
 import css from './styles.module.css'
 
 interface IProps {
@@ -20,7 +20,7 @@ interface IProps {
 
 export const Column: React.FC<IProps> = ({ data, column = 1 }) => {
   return (
-    <div className={css.column}>
+    <div className={css.column} data-testid="column">
       {data
         .filter(item => item.grid_column === column)
         .map(art => {

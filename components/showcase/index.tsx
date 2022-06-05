@@ -10,7 +10,7 @@
 
 import { IArt } from '@/interfaces/index'
 import css from './styles.module.css'
-import { Column } from '../column'
+import { Column } from '@/components/index'
 
 interface IProps {
   data: IArt[]
@@ -18,7 +18,7 @@ interface IProps {
 
 export const Showcase: React.FC<IProps> = ({ data }) => {
   return (
-    <div className={css.grid}>
+    <div className={css.grid} data-testid="showcase">
       <Column data={data} column={1} />
       <Column data={data} column={2} />
       <Column data={data} column={3} />
