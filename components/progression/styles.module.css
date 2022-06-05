@@ -1,6 +1,5 @@
 .wrapper {
-  padding-block: var(--p-1);
-  padding-inline: var(--p-2);
+  padding: var(--p-1);
   border-top: 2px solid var(--clr-light-shade-3);
   background-color: var(--clr-light-shade-1);
   position: relative;
@@ -22,6 +21,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .wrapper {
+    padding-inline: var(--p-2);
+  }
+
   .actions {
     display: flex;
     gap: 2.313rem;
