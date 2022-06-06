@@ -1,3 +1,12 @@
+/*-------------------------------------------------------------------
+|  React FC Art
+|
+|  Purpose:  THIS IS THE MAIN COMPONENT FOR `[SLUG]` PAGE WHICH SHOWS
+|            THE CURRENT SLIDESHOW TO THE USER 
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import { IArt } from '@/interfaces/index'
 import React from 'react'
 import { Hero, Desc, Title } from '@/components/index'

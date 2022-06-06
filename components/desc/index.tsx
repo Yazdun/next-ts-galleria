@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Desc
+|
+|  Purpose:  RENDERS THE ART'S DESCRIPTION IN THE `ART` FC
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import css from './styles.module.css'
 

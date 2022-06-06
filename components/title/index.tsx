@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Desc
+|
+|  Purpose:  RENDERS THE ART'S TITLE IN THE `ART` FC
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import { useWindowSize } from '@/hooks/index'
 import { IArt } from '@/interfaces/index'
 import Image from 'next/image'
