@@ -42,7 +42,7 @@ const Slug: NextPage<IProps> = props => {
       <SEO title={art.name} desc={art.description} />
       <Layout>
         <div className={css.container}>
-          <Hero images={art.images} />
+          <Hero images={art.images} key={art.name} />
         </div>
         <Progression art={art} />
       </Layout>
