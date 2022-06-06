@@ -13,6 +13,7 @@ import { Hero, Desc, Title } from '@/components/index'
 import { motion } from 'framer-motion'
 import css from './styles.module.css'
 import { framer_header } from './framer'
+import Link from 'next/link'
 
 interface IProps {
   art: IArt
@@ -26,6 +27,7 @@ export const Art: React.FC<IProps> = ({ art }) => {
         <Title art={art} />
       </motion.div>
       <Desc desc={art.description} year={art.year} />
+      <Link href="/">Home</Link>
     </div>
   )
 }
