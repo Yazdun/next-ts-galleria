@@ -1,4 +1,4 @@
-import { SEO, Layout, Progression, Hero } from '@/components/index'
+import { SEO, Layout, Progression, Hero, Art } from '@/components/index'
 import type { NextPage } from 'next'
 import { data } from '@/data/index'
 import { GetStaticProps, GetStaticPaths } from 'next'
@@ -42,7 +42,7 @@ const Slug: NextPage<IProps> = props => {
       <SEO title={art.name} desc={art.description} />
       <Layout>
         <div className={css.container}>
-          <Hero images={art.images} key={art.name} />
+          <Art art={art} />
         </div>
         <Progression art={art} />
       </Layout>

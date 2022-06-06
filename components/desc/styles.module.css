@@ -1,0 +1,20 @@
+.desc {
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  color: var(--clr-dark-shade-2);
+}
+
+.container {
+  padding-block: 10rem;
+  position: relative;
+}
+
+.year {
+  position: absolute;
+  top: 4.3rem;
+  z-index: -1;
+  color: var(--clr-light-shade-2);
+  font-size: 6.25rem;
+  right: 0;
+}
