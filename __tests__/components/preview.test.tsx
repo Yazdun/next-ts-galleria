@@ -3,7 +3,7 @@ import { Preview } from '@/components/index'
 import { data } from '@/data/index'
 
 describe('Preview', () => {
-  it('should renders correct info', () => {
+  it('should render correct info', () => {
     render(<Preview art={data[0]} />)
     const info = screen.getByTestId('preview-artist')
     expect(info).toHaveTextContent(data[0].artist.name)

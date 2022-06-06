@@ -38,7 +38,7 @@ export const Hero: React.FC<IProps> = ({ images }) => {
           objectFit="cover"
           height={isTouch ? 820 : 1200}
         />
-        <button className={css.cta} onClick={openModal}>
+        <button className={css.cta} onClick={openModal} data-testid="hero_cta">
           <SvgExpand />
           view image
         </button>

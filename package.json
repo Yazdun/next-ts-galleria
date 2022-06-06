@@ -14,7 +14,8 @@
     "next-seo": "^5.4.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "usehooks-ts": "^2.5.4"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.16.4",

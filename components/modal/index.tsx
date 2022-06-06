@@ -10,7 +10,9 @@ import { IPictures } from '@/interfaces/index'
 import Image from 'next/image'
 import css from './styles.module.css'
 import { motion } from 'framer-motion'
-import { framer_modal_card } from './framer'
+import { framer_modal_card, framer_modal_container } from './framer'
+import { useOnClickOutside } from 'usehooks-ts'
+import { useRef } from 'react'
 
 interface IProps {
   fn(): void
@@ -18,14 +20,16 @@ interface IProps {
 }
 
 export const Modal: React.FC<IProps> = ({ fn, images }) => {
+  const ref = useRef(null)
+
+  useOnClickOutside(ref, fn)
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
       className={css.wrapper}
+      {...framer_modal_container}
+      data-testid="modal"
     >
-      <motion.div className={css.card} {...framer_modal_card}>
+      <motion.div className={css.card} {...framer_modal_card} ref={ref}>
         <button onClick={fn} className={css.cta}>
           close
         </button>
