@@ -1,0 +1,31 @@
+.image {
+  width: 100%;
+  position: relative;
+}
+
+.cta {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: white;
+  text-transform: capitalize;
+  font-family: inherit;
+  padding: 0.7rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  letter-spacing: 0.125rem;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .image {
+    max-width: 29.688rem;
+  }
+
+  .cta {
+    bottom: 1rem;
+    top: auto;
+  }
+}
