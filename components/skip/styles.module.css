@@ -1,0 +1,8 @@
+.disabled {
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.skip {
+  transition: 0.3s;
+}

@@ -20,6 +20,7 @@ export const Preview: React.FC<IProps> = ({ art }) => {
   const { name, artist } = art
   return (
     <motion.p {...framer_preview} className={css.artist}>
+      <div className={css.linear}></div>
       {name}
       <span data-testid="preview-artist">{artist.name}</span>
     </motion.p>

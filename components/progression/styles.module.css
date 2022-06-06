@@ -2,7 +2,9 @@
   padding: var(--p-1);
   border-top: 2px solid var(--clr-light-shade-3);
   background-color: var(--clr-light-shade-1);
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .container {
@@ -12,12 +14,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* flex-wrap: wrap; */
+  gap: 1rem;
 }
 
 .actions {
   display: flex;
   gap: 1.313rem;
   font-size: 1.4rem;
+  background-color: var(--clr-light-shade-1);
 }
 
 @media only screen and (min-width: 768px) {

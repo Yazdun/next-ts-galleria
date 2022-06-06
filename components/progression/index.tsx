@@ -23,6 +23,9 @@ export const Progression: React.FC<IProps> = ({ art }) => {
   const prev = data[art.id - 1] ? data[art.id - 1] : data[14]
   const next = data[art.id + 1] ? data[art.id + 1] : data[0]
 
+  const next_disabled = next.id === 0
+  const prev_disabled = prev.id === data.length - 1
+
   return (
     <div className={css.wrapper}>
       <div className={css.container}>
@@ -36,11 +39,13 @@ export const Progression: React.FC<IProps> = ({ art }) => {
             icon={<TbPlayerSkipBack />}
             aria_label="previous"
             href={prev.slug}
+            disabled={prev_disabled}
           />
           <Skip
             icon={<TbPlayerSkipForward />}
             aria_label="next"
             href={next.slug}
+            disabled={next_disabled}
           />
         </div>
       </div>
