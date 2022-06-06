@@ -1,3 +1,15 @@
 .header {
   position: relative;
 }
+
+@media only screen and (min-width: 1170px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .header {
+    width: 100%;
+  }
+}

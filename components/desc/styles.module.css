@@ -18,3 +18,35 @@
   font-size: 6.25rem;
   right: 0;
 }
+
+@media only screen and (min-width: 768px) {
+  .year {
+    right: auto;
+    left: -1rem;
+    font-size: 12.5rem;
+    top: 1rem;
+  }
+
+  .desc {
+    padding-inline: 6.938rem;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .container {
+    max-width: 27.75rem;
+    padding-top: 7rem;
+    padding-bottom: 0;
+  }
+
+  .year {
+    top: -2.2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .desc {
+    padding: 0;
+    padding-right: 7.563rem;
+  }
+}

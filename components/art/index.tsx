@@ -9,7 +9,7 @@ interface IProps {
 
 export const Art: React.FC<IProps> = ({ art }) => {
   return (
-    <div>
+    <div className={css.container}>
       <div className={css.header}>
         <Hero images={art.images} key={art.name} />
         <Title art={art} />
