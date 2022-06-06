@@ -19,7 +19,7 @@ export const Layout: React.FC<IProps> = ({ children }) => {
   return (
     <>
       <Navbar />
-      <motion.main>{children}</motion.main>
+      <motion.main {...framer_variants}>{children}</motion.main>
     </>
   )
 }
