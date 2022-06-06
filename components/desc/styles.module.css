@@ -6,13 +6,13 @@
 }
 
 .container {
-  padding-block: 10rem;
+  padding-block: 9rem;
   position: relative;
 }
 
 .year {
   position: absolute;
-  top: 4.3rem;
+  top: 3.3rem;
   z-index: -1;
   color: var(--clr-light-shade-2);
   font-size: 6.25rem;

@@ -1,0 +1,22 @@
+.container {
+  position: absolute;
+  bottom: -6rem;
+  max-width: 80%;
+}
+
+.text {
+  padding: 2rem;
+  padding-left: 0;
+  background-color: var(--clr-light-shade-1);
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.artist {
+  font-size: 0.938rem;
+  opacity: 0.4;
+  font-weight: normal;
+  margin-top: 0.5rem;
+}
