@@ -27,7 +27,6 @@ export const Art: React.FC<IProps> = ({ art }) => {
         <Title art={art} />
       </motion.div>
       <Desc desc={art.description} year={art.year} />
-      <Link href="/">Home</Link>
     </div>
   )
 }
