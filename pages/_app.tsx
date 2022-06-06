@@ -5,7 +5,7 @@ import 'styles/global.css'
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <AnimatePresence exitBeforeEnter initial={false}>
-      <Component {...pageProps} key={router.route} />
+      <Component {...pageProps} canonical={router.route} key={router.route} />
     </AnimatePresence>
   )
 }
