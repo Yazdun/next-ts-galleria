@@ -17,6 +17,10 @@
   --ff-serif: 'Libre Baskerville', serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {

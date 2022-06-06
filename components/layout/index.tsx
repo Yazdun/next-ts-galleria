@@ -8,6 +8,8 @@
 
 import React from 'react'
 import { Navbar } from '../navbar'
+import { motion } from 'framer-motion'
+import { framer_variants } from './framer'
 
 interface IProps {
   children: React.ReactNode
@@ -17,7 +19,7 @@ export const Layout: React.FC<IProps> = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <motion.main {...framer_variants}>{children}</motion.main>
     </>
   )
 }

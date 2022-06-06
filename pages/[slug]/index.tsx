@@ -5,6 +5,7 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import { ParsedUrlQuery } from 'querystring'
 import { IArt } from '@/interfaces/index'
 import css from './styles.module.css'
+import { AnimatePresence } from 'framer-motion'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = data.map(art => {
@@ -40,9 +41,11 @@ const Slug: NextPage<IProps> = props => {
   return (
     <>
       <SEO title={art.name} desc={art.description} />
-      <Layout>
+      <Layout key="slug">
         <div className={css.container}>
-          <Art art={art} />
+          <AnimatePresence exitBeforeEnter initial={false}>
+            <Art art={art} key={art.name} />
+          </AnimatePresence>
         </div>
         <Progression art={art} />
       </Layout>

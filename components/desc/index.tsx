@@ -7,6 +7,8 @@
 *-------------------------------------------------------------------*/
 
 import React from 'react'
+import { framer_desc, framer_year } from './framer'
+import { motion } from 'framer-motion'
 import css from './styles.module.css'
 
 interface IProps {
@@ -16,9 +18,13 @@ interface IProps {
 
 export const Desc: React.FC<IProps> = ({ desc, year }) => {
   return (
-    <div className={css.container}>
-      <span className={css.year}>{year}</span>
-      <p className={css.desc}>{desc}</p>
+    <div {...framer_year} className={css.container}>
+      <motion.span {...framer_year} className={css.year}>
+        {year}
+      </motion.span>
+      <motion.p {...framer_desc} className={css.desc}>
+        {desc}
+      </motion.p>
     </div>
   )
 }

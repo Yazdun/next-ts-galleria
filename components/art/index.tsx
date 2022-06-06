@@ -10,7 +10,9 @@
 import { IArt } from '@/interfaces/index'
 import React from 'react'
 import { Hero, Desc, Title } from '@/components/index'
+import { motion } from 'framer-motion'
 import css from './styles.module.css'
+import { framer_header } from './framer'
 
 interface IProps {
   art: IArt
@@ -19,10 +21,10 @@ interface IProps {
 export const Art: React.FC<IProps> = ({ art }) => {
   return (
     <div className={css.container}>
-      <div className={css.header}>
+      <motion.div {...framer_header} className={css.header}>
         <Hero images={art.images} key={art.name} />
         <Title art={art} />
-      </div>
+      </motion.div>
       <Desc desc={art.description} year={art.year} />
     </div>
   )

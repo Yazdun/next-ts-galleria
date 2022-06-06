@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <>
       <SEO />
-      <Layout>
+      <Layout key="index">
         <h1 className="sr-only">frontend mentor's galleria</h1>
         <Showcase data={data} />
       </Layout>

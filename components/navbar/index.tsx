@@ -18,6 +18,8 @@ import css from './styles.module.css'
 import Link from 'next/link'
 import { data } from '@/data/index'
 import { useRouter } from 'next/router'
+import { AnimatePresence, motion } from 'framer-motion'
+import { framer_variants } from './framer'
 
 export const Navbar: React.FC = () => {
   const { isTouch } = useWindowSize()
@@ -46,11 +48,18 @@ export const Navbar: React.FC = () => {
         <li>
           <Link href={isHome ? data[0].slug : '/'}>
             <a className={css.link}>
-              {isHome ? (
-                <span>start slideshow</span>
-              ) : (
-                <span>stop slideshow</span>
-              )}
+              <AnimatePresence exitBeforeEnter>
+                {isHome ? (
+                  <motion.span {...framer_variants} key="stop">
+                    start
+                  </motion.span>
+                ) : (
+                  <motion.span {...framer_variants} key="start">
+                    stop
+                  </motion.span>
+                )}
+              </AnimatePresence>{' '}
+              slideshow
             </a>
           </Link>
         </li>
