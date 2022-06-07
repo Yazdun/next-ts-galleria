@@ -42,7 +42,7 @@ const Slug: NextPage<IProps> = props => {
       <SEO
         title={art.name}
         desc={art.description}
-        image="https://femgalleria.netlify.app/api/og-image?name=Next.js&stage=adopt"
+        image="https://femgalleria.vercel.app/api/og-image?name=Next.js&stage=adopt"
       />
       <Layout key="slug">
         <AnimatePresence exitBeforeEnter initial={false}>
