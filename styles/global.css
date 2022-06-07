@@ -7,6 +7,8 @@
   --clr-light-shade-2: #f3f3f3;
   --clr-light-shade-3: #e5e5e5;
 
+  --bs-1: rgb(235, 52, 241) 0px 0px 0px 3px;
+
   --maxwidth-1: 85rem;
 
   --p-1: 1.5rem;
@@ -19,6 +21,18 @@
 
 html {
   scroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(107, 107, 107);
 }
 
 *,
@@ -63,6 +77,12 @@ button {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
+}
+
+/* focus visible */
+button:focus-visible,
+a:focus-visible {
+  box-shadow: var(--bs-1) !important;
 }
 
 /* remove animations for people who've turned them off */

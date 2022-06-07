@@ -27,12 +27,7 @@ export const Navbar: React.FC = () => {
         <li>
           <Link href={isHome ? data[0].slug : '/'}>
             <a className={css.link}>
-              {isHome ? (
-                <span key="stop">start</span>
-              ) : (
-                <span key="start">stop</span>
-              )}{' '}
-              slideshow
+              {isHome ? <span>start</span> : <span>stop</span>} slideshow
             </a>
           </Link>
         </li>

@@ -1,0 +1,16 @@
+.container {
+  padding: 5rem;
+  text-align: center;
+  position: relative;
+}
+.num {
+  position: absolute;
+  font-size: 5rem;
+  top: 5.5rem;
+  color: var(--clr-light-shade-2);
+  z-index: -1;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+}
