@@ -39,11 +39,7 @@ const Slug: NextPage<IProps> = props => {
 
   return (
     <>
-      <SEO
-        title={art.name}
-        desc={art.description}
-        image="https://femgalleria.netlify.app/api/og-image?name=Next.js"
-      />
+      <SEO title={art.name} desc={art.description} />
       <Layout key="slug">
         <AnimatePresence exitBeforeEnter initial={false}>
           <Art art={art} key={art.name} />
