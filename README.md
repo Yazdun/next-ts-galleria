@@ -15,11 +15,11 @@
     <a href="#"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://femgalleria.vercel.app/">View Demo</a>
     ·
-    <a href="https://github.com/Yazdun/frontend_mentor/issues">Report Bug</a>
+    <a href="https://github.com/Yazdun/next-ts-galleria/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Yazdun/frontend_mentor/issues">Request Feature</a>
+    <a href="https://github.com/Yazdun/next-ts-galleria/issues">Request Feature</a>
   </p>
 
 [![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=vercel&logo=vercel&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Ffemgalleria.vercel.app/%2F)](LIVE)
