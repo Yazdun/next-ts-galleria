@@ -19,6 +19,20 @@
   right: 0;
 }
 
+.link {
+  margin-top: 5.125rem;
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--clr-dark-shade-2);
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 768px) {
   .year {
     right: auto;

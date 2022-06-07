@@ -7,24 +7,33 @@
 *-------------------------------------------------------------------*/
 
 import React from 'react'
-import { framer_desc, framer_year } from './framer'
+import { framer_text, framer_year } from './framer'
 import { motion } from 'framer-motion'
 import css from './styles.module.css'
 
 interface IProps {
   desc: string
   year: number
+  source: string
 }
 
-export const Desc: React.FC<IProps> = ({ desc, year }) => {
+export const Desc: React.FC<IProps> = ({ desc, year, source }) => {
   return (
     <div {...framer_year} className={css.container}>
       <motion.span {...framer_year} className={css.year}>
         {year}
       </motion.span>
-      <motion.p {...framer_desc} className={css.desc}>
-        {desc}
-      </motion.p>
+      <div className={css.desc}>
+        <motion.p {...framer_text}>{desc}</motion.p>
+        <motion.a
+          {...framer_text}
+          className={css.link}
+          href={source}
+          target="_blank"
+        >
+          go to source
+        </motion.a>
+      </div>
     </div>
   )
 }
