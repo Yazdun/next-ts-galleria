@@ -39,7 +39,11 @@ const Slug: NextPage<IProps> = props => {
 
   return (
     <>
-      <SEO title={art.name} desc={art.description} />
+      <SEO
+        title={art.name}
+        desc={art.description}
+        image="https://femgalleria.vercel.app/api/og-image?name=Next.js&stage=adopt"
+      />
       <Layout key="slug">
         <AnimatePresence exitBeforeEnter initial={false}>
           <Art art={art} key={art.name} />
