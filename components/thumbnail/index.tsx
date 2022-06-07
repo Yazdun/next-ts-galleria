@@ -19,7 +19,11 @@ interface IProps {
 export const Thumbnail: React.FC<IProps> = ({ art }) => {
   return (
     <Link href={art.slug}>
-      <a className={css.thumbnail} data-testid={art.name}>
+      <a
+        className={css.thumbnail}
+        data-testid={art.name}
+        aria-label={`${art.name} painted by ${art.artist.name}`}
+      >
         <Image
           src={art.images.thumbnail}
           alt={art.name}
