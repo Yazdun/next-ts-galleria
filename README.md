@@ -12,7 +12,7 @@
   <p align="center">
     galleria slideshow application
     <br />
-    <a href="#"><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/galleria-next-and-typescript-ct97714FTE"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
     <a href="https://femgalleria.vercel.app/">View Demo</a>
