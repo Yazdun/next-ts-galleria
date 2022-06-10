@@ -40,7 +40,7 @@ const Slug: NextPage<IProps> = props => {
   return (
     <>
       <SEO title={art.name} desc={art.description} />
-      <Layout key="slug">
+      <Layout>
         <AnimatePresence exitBeforeEnter initial={false}>
           <Art art={art} key={art.name} />
         </AnimatePresence>
